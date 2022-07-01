@@ -1,0 +1,19 @@
+name: Unit testing
+
+on:
+  push:
+    branches:
+      - main
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+
+      - name: Run the docker image
+        run: docker-compose up -d
+
+      - name: Active OpenPub plugin
+        run: docker-compose exec wordpress wp plugin activate OpenPub --allow-root
