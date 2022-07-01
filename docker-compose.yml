@@ -9,6 +9,7 @@ services:
     volumes:
       - ./plugins:/var/www/html/wp-content/plugins
       - ./wp-config.php:/var/www/html/wp-config.php
+      - ./composer.json:/var/www/html/composer.json
     #command: wp plugin activate OpenPub --allow-root
     ports:
       - 80:80

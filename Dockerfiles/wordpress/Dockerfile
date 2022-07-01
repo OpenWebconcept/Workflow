@@ -13,9 +13,4 @@ RUN php -r "if (hash_file('sha384', 'composer-setup.php') === '55ce33d7678c5a611
 RUN php composer-setup.php 
 RUN php -r "unlink('composer-setup.php');"
 RUN mv composer.phar /usr/local/bin/composer
-# Setting up PHPUnit
-RUN curl -O https://phar.phpunit.de/phpunit-9.phar
-RUN php phpunit-9.phar --info
-RUN chmod +x phpunit-9.phar
-RUN mv phpunit-9.phar /usr/local/bin/phpunit
 WORKDIR /var/www/html
