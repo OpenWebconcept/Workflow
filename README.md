@@ -37,11 +37,13 @@ $ wp plugin activate {your-plugin-name} --allow-root
 
 
 ## Testing your code
+This repository does an automatic codecheck whenever you push your code to github, and only releases a new version of your plugin afther all teh checks turn out to be succesfull.
 
 
-Afther installing php unit, you can run php unit trough
+
+You can however also check your code manually while your are building it. In order to do this run the command below and change `{test_file}` with the location of the testfile within your plugin e.g.  
 ```cli 
-$ ./vendor/bin/phpunit tests
+$ ./vendor/bin/phpunit /wp-content/plugins/{plugin_name}/tests.php
 ```  
 
 
