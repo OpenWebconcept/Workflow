@@ -8,6 +8,12 @@ This template provides a containerized [wordpress cli](https://developer.wordpre
 ## Using this template to build a wordpress plugin
 
 
+You can setup your first plugin by creating a 
+
+```cli 
+$ wp scaffold plugin unit-test-plugin
+```  
+
 ## Local development
 Requires
 - GIT
