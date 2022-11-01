@@ -1,0 +1,21 @@
+name: "Workflow"
+
+publiccodeYmlVersion: 1.0
+url: "https://github.com/OpenWebconcept/Workflow"
+
+platforms:
+  - "web"
+
+categories:
+  - "application-development"
+
+softwareType: "softwareAddon"
+
+description:
+  localisedName: "Workflow"
+  shortDescription: "This repository holds a setup for developing and testings wordpress plugins"
+  longDescription: "This repository holds a setup for developing and testings wordpress plugins"
+
+nl:
+  commonground:
+    layerType: "service"
